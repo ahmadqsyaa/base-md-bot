@@ -1,6 +1,7 @@
 //JANGAN DI JUAL BELIKAN YA 🙏 PAKE AJA UNTUK KEBUTUHAN PRIBADI//
-// WHATSAPP: wa.me//:6283273888147
+// WHATSAPP: wa.me//:6283173888147
 // @erickqusyaerick
+// TANKS TO = HISOKA-MORROW, LEXYY, JAROT OFFC, SISANYA DARI github.com/ngaji-ngoding/whabot-sticker 
 
 console.log("[ START ]");
 const { useSingleFileAuthState, downloadMediaMessage, DisconnectReason } = require('@adiwajshing/baileys');
@@ -50,10 +51,10 @@ const startSock = () => {
           if (!m.messages) return;
           if (msg.key && msg.key.remoteJid == "status@broadcast") return
         console.log(msg)
-        const from = msg.key.remoteJid
-        const isGroup = msg.key.remoteJid.endsWith('@g.us')
-        const quoted = m.quoted ? m.quoted : m
-        const reply = (teks) => {sock.sendMessage(from, { text: teks }, { quoted: msg })}
+        const from = msg.key.remoteJid 
+        const isGroup = msg.key.remoteJid.endsWith('@g.us') //KALAU DIGRUP BAKAL DICANCEL
+        const quoted = m.quoted ? m.quoted : m //KAYA UNTUK NGEBALAS PESAN GITU
+        const reply = (teks) => {sock.sendMessage(from, { text: teks }, { quoted: msg })} //UNTUK NGEBALAS TEXT BIAR SIMPLE
 //≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈//       
         //STICKER 
         let caption;
@@ -81,31 +82,31 @@ const startSock = () => {
         reply('Iyaa? silahkan tinggalkan pesan, dan tunggulah!')
          mo = fs.readFileSync('./2.webp')
         sock.sendMessage(from,{sticker: mo}, {quoted: msg})
-        sock.readMessages([msg.key])
+        sock.readMessages([msg.key])//READ MESSAGE
         }
         
         if(pesan == 'hallo'){
         if(isGroup) return //KALO DI GRUP BAKAL GA RESPON HAPUS AJA KLO GA PENTING//
         sock.sendMessage(from, {text:'hello juga'}, {quoted: msg})
-        sock.readMessages([msg.key])
+        sock.readMessages([msg.key])//READ MESSAGE
         }
         
         if(pesan == 'hai'){
         if(isGroup) return 
         socksendMessage(from, { text : 'hallo 😌'})
-        sock.readMessages([msg.key])
+        sock.readMessages([msg.key])//READ MESSAGE
         }
         
         if(pesan == 'ping'){
         if(isGroup) return
         socksendMessage(from, { text : 'pong'})
-        sock.readMessages([msg.key])
+        sock.readMessages([msg.key])//READ MESSAGE
         }
         
         if(pesan == 'p'){
         if(isGroup) return
         sock.sendMessage(from, {text: 'Yaa, ada yang bisa saya bantu?'}, {quoted: msg})
-        sock.readMessages([msg.key])
+        sock.readMessages([msg.key])//READ MESSAGE
         }
         
 //≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈//
