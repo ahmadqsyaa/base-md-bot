@@ -56,8 +56,6 @@ const startSock = () => {
         console.log(msg)
         const from = msg.key.remoteJid
         const isGroup = msg.key.remoteJid.endsWith('@g.us')
-        const groupMembers = isGroup ? groupMetadata.participants : ''
-        const groupMetadata = isGroup ? await sock.groupMetadata(from) : ''
         const quoted = m.quoted ? m.quoted : m
         const reply = (teks) => {sock.sendMessage(from, { text: teks }, { quoted: msg })}
 //≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈//       
