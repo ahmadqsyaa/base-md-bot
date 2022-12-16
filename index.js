@@ -24,7 +24,7 @@ const startSock = () => {
 
       sock.ev.on("connection.update", ({ connection, lastDisconnect})=> { 
         if (connection == "open") {
-        console.log(connecti);
+        console.log(connection);
 //sock.sendMessage('6283173888147@s.whatsapp.net', {text: 'telah Connect!'})
 }
         
