@@ -1,6 +1,7 @@
 # base-md-bot
 <br>---SILAHKAN DIPAKAI----</br>
-<br>PENGGUNAAN</br>
-<br>yarn</br>
-<br>node index.js</br>
-
+[----------------]
+Start :
+1. yarn
+2. node index.js
+[----------------]
