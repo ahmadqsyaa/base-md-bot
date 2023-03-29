@@ -1,8 +1,3 @@
-//JANGAN DI JUAL BELIKAN YA 🙏 PAKE AJA UNTUK KEBUTUHAN PRIBADI//
-// WHATSAPP: wa.me//:6283173888147
-// @erickqusyaerick
-// TANKS TO = HISOKA-MORROW, LEXYY, JAROT OFFC, SISANYA DARI github.com/ngaji-ngoding/whabot-sticker 
-
 console.log("[ START ]");
 const { useSingleFileAuthState, downloadMediaMessage, DisconnectReason } = require('@adiwajshing/baileys');
 const makeWASocket = require('@adiwajshing/baileys').default;
