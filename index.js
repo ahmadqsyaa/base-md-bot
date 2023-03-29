@@ -81,8 +81,8 @@ console.log(e)
         //CHAT RESPON
 try{
         let pesan;
-        if (msg.message.extendedTextMessage)
-        pesan = msg.message.extendedTextMessage.text
+        if (msg.message.conversation)
+        pesan = msg.message.conversation;
         
         
         if(pesan == ('Rik') || pesan == ('rik') || pesan == ('erick')
